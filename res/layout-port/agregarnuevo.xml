@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:layout_gravity="center" android:id="@+id/linearLayout1"
+                  android:layout_marginTop="10dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Comida:"
+                  android:id="@+id/textView2" android:layout_gravity="center" android:textSize="18dp"
+                  android:singleLine="true"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_nombre" android:maxLines="1" android:maxLength="50" android:lines="1"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginTop="10dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo"
+                android:id="@+id/textView" android:layout_gravity="left|center_vertical" android:textSize="18dp"/>
+        <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tipo"
+                android:layout_gravity="center"
+                style="@style/tipo_spinner"
+                android:textSize="18dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                  android:layout_height="wrap_content" android:layout_gravity="center" android:id="@+id/linearLayout"
+                  android:layout_marginTop="10dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Me Gusta:"
+                android:id="@+id/textView1" android:layout_gravity="center" android:textSize="18dp"/>
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:id="@+id/rbtnGrp_megusta">
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si"
+                    android:id="@+id/si_me_gusta" android:layout_gravity="left|center_vertical"
+                    android:textSize="18dp" android:enabled="true"/>
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/no_me_gusta" android:textSize="18dp" android:enabled="true"/>
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:id="@+id/btnGuardar" android:layout_gravity="center" android:layout_marginTop="30dp"/>
+</LinearLayout>

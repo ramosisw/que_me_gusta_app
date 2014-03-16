@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">¿Qué Me Gusta?</string>
+    <string name="que_si">¿Qué si me Gusta?</string>
+    <string name="que_no">¿Qué no me Gusta?</string>
+    <string name="agregar_nuevo">Agregar Otro</string>
+</resources>

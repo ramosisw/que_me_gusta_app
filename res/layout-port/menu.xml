@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="¿Qué si me gusta?"
+            android:id="@+id/btn_si" android:layout_gravity="center" android:layout_marginTop="40dp"
+            android:textStyle="bold" android:textSize="15dp"/>
+    <Button android:layout_width="200dp" android:layout_height="wrap_content" android:text="¿Qué no me gusta?"
+            android:id="@+id/btn_no" android:layout_gravity="center" android:textStyle="bold" android:textSize="15dp"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="En está Aplicacion veras que me gusta y que no, hablando de comida claro."
+            android:id="@+id/textView" android:layout_marginLeft="10dp" android:textSize="18sp"
+            android:layout_marginTop="20dp" android:layout_marginRight="10dp"/>
+</LinearLayout>
